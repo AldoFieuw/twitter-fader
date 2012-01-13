@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Twitter Fader Demo</title>
+        <style>
+            body{
+                font-family: Tahoma, Arial, sans-serif;
+            }
+        
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+        
+            ul{
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px;
+                list-style-type: none;
+                font-size: 20px;
+                line-height: 1.5em;
+                text-align: center;
+                border: 1px solid #DDD;
+                background: #EEE;
+                color: #111;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <h1>Twitter Fader Demo</h1>
+        
+        <ul id="twf-container"></ul>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+        <script src="jquery.twitterFader.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('ul#twf-container').twitterFader('web');
+            });
+        </script>
+    </body>
+
+</html>
