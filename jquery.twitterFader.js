@@ -4,6 +4,9 @@
  */
 
 (function($) {
+    
+    'use strict';
+    
     $.fn.twitterFader = function(searchTerm, options) {
         
         var settings = $.extend({
@@ -13,7 +16,7 @@
             returnType     : 'recent',
             returnLanguage : 'en'
         }, options),
-            $fader = $(this);
+            $fader         = $(this);
         
         if (!searchTerm) {
             $fader.html('Error! You need to enter a search term.');

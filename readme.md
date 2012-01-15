@@ -10,9 +10,9 @@ __Twitter Fader__ is a _jQuery_ plug-in which retrieves a number of tweets, base
 
 ### How to use it
 
-1. Add the file to your project, along with _jQuery_.
+1. Add `jquery.twitterFader.js` to your project, along with _jQuery_.
 2. Add a `ul` element to your page, with some identifying characteristic so you can easily target it in _jQuery_.
-3. Add the following _jQuery_ to your page, to be executed on load:
+3. Add the following JavaScript to your page, to be executed on load:
 
     $('ul#twitter').twitterFader('web');
 
@@ -24,17 +24,17 @@ A demo is available in demo.html.
 
 Additional settings can be used to customise the ticker, and should be added as a second parameter after the topic within curly braces:
 
-+ `displayRate` sets the time, in milliseconds, that each tweet is displayed (default `10000`, or 10 seconds).
-+ `fadeRate` sets the time, in milliseconds, that each tweet takes to fade in or out (default `300`).
-+ `returnNum` sets the number of tweets to retrieve (default `5`).
-+ `returnType` sets the type of tweets to return, either `"recent"`, `"popular"`, or `"mixed"` (default `"recent"`).
-+ `returnLanguage` sets the language of the tweets to be retrieved, based upon an [ISO639-1 code](en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (default `"en"`).
++ `displayRate`: The time in milliseconds that each tweet is displayed (default `10000`, or 10 seconds; must be an integer).
++ `fadeRate`: The time in milliseconds that each tweet takes to fade in or out (default `300`; must be an integer).
++ `returnNum`: The number of tweets to retrieve at a time (default `5`; must be an integer).
++ `returnType`: The type of tweets to return (default `"recent"`; can be `"recent"`, `"popular"` or `"mixed"`).
++ `returnLanguage`: The language of the tweets to be retrieved (default `"en"`; must be a string containing an [ISO639-1 code](en.wikipedia.org/wiki/List_of_ISO_639-1_codes)).
 
 An example of these in practice:
 
     $('ul#twf-container').twitterFader('web', {
-        displayRate: 5000,
-        fadeRate: 500
+        displayRate : 5000,
+        fadeRate    : 500
     });
 
 ### How it works
