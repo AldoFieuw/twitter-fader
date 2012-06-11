@@ -14,7 +14,9 @@ __Twitter Fader__ is a _jQuery_ plug-in which retrieves a number of tweets, base
 2. Add a `ul` element to your page, with some identifying characteristic so you can easily target it in _jQuery_.
 3. Add the following JavaScript to your page, to be executed on load:
 
+```javascript
 	$('ul#twitter').twitterFader('web');
+```
 
 ...where `twitter` is the ID of your `ul` element, and `web` is your selected topic.
 
@@ -32,15 +34,17 @@ Additional settings can be used to customise the ticker, and should be added as 
 
 An example of these in practice:
 
+```javascript
 	$('ul#twf-container').twitterFader('web', {
 		displayRate : 5000,
 		fadeRate : 500
 	});
+```
 
 ### How it works
 
 The plug-in simply grabs a number of tweets (specified by `returnNum`) and adds them to the `ul` element as `li` elements, with all but the first hidden by default. After a certain amount of time (`displayRate`), the first `li` is faded out and removed. This repeats until no more are left, after which more are retrieved.
 
-### Author
+### Author and Acknowledgements
 
-[Chris Cook](http://chris-cook.co.uk)
++ Written by [Chris Cook](http://chris-cook.co.uk)
