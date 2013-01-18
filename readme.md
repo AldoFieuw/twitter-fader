@@ -6,6 +6,10 @@
 
 __Twitter Fader__ is a _jQuery_ plug-in which retrieves a number of tweets, based upon a supplied search term, and displays them in a ticker-like display. Each tweet is displayed for a set period of time, then fades out and is replaced by another. This continues indefinitely.
 
+### Demo
+
+A demo is available [here](http://chriscook.github.com/twitter-fader/).
+
 ### How to use it
 
 1. Add `jquery.twitterFader.js` to your project, along with _jQuery_.
