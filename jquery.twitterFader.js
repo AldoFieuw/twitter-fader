@@ -47,7 +47,9 @@
 									var text = settings.linkify ? linkify(item.text) : item.text;
 									$fader.append('<li style="display:none"><b>@' + item.from_user + ':</b> ' + text + '</li>');
 								});
-								setInterval(function (){ $fader.children('li').first().fadeIn(settings.fadeRate).delay(settings.displayRate).fadeOut(settings.fadeRate, function () { $(this).remove() } ) }, 1);
+								setInterval(function () {
+									$fader.children('li').first().fadeIn(settings.fadeRate).delay(settings.displayRate).fadeOut(settings.fadeRate, function () { $(this).remove() } )
+								}, 1);
 							} else {
 								$fader.append('No results found');
 							}
