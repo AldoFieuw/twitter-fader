@@ -22,8 +22,7 @@
 	"bugs": "https://github.com/chriscook/twitter-fader/issues",
 	"homepage": "https://github.com/chriscook/twitter-fader",
 	"docs": "https://github.com/chriscook/twitter-fader",
-	"download": "https://github.com/chriscook/twitter-fader",
-	"demo": "https://github.com/chriscook/twitter-fader",
+	"demo": "http://chriscook.github.com/twitter-fader",
 	"dependencies": {
 		"jquery": ">=1.5"
 	}
