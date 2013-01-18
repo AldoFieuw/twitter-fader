@@ -10,13 +10,13 @@
 	$.fn.twitterFader = function (searchTerm, options) {
 
 		var settings = $.extend({
-				displayRate : 10000,
-				fadeRate : 300,
-				returnNum : 5,
-				returnType : 'recent',
-				returnLanguage : 'en'
-			}, options),
-			$fader = $(this);
+			displayRate : 10000,
+			fadeRate : 300,
+			returnNum : 5,
+			returnType : 'recent',
+			returnLanguage : 'en'
+		}, options),
+		$fader = $(this);
 
 		if (!searchTerm) {
 			$fader.html('Error! You need to enter a search term.');
