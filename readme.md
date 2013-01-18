@@ -31,11 +31,12 @@ Additional settings can be used to customise the ticker, and should be added as 
 + `returnNum`: The number of tweets to retrieve at a time (default `5`; must be an integer).
 + `returnType`: The type of tweets to return (default `"recent"`; can be `"recent"`, `"popular"` or `"mixed"`).
 + `returnLanguage`: The language of the tweets to be retrieved (default `"en"`; must be a string containing an [ISO639-1 code](en.wikipedia.org/wiki/List_of_ISO_639-1_codes)).
++ `linkify`: Whether or not to turn URLs in tweets into clickable links (default `true`; must be boolean).
 
 An example of these in practice:
 
 ```javascript
-	$('ul#twf-container').twitterFader('web', {
+	$('#twf-container').twitterFader('web', {
 		displayRate : 5000,
 		fadeRate : 500
 	});
@@ -48,3 +49,4 @@ The plug-in simply grabs a number of tweets (specified by `returnNum`) and adds 
 ### Author and Acknowledgements
 
 + Written by [Chris Cook](http://chris-cook.co.uk)
++ Utilises [LinkifyURL by Jeff Roberson](https://github.com/jmrware/LinkifyURL)
