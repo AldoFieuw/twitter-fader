@@ -1,5 +1,5 @@
 /*
- * Twitter Fader jQuery Plugin version 1.1.1
+ * Twitter Fader jQuery Plugin version 1.2.1
  * Chris Cook - chris@chris-cook.co.uk
  */
 
