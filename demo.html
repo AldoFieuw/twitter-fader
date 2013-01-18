@@ -2,47 +2,47 @@
 
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Twitter Fader demo</title>
-        <style>
-            body {
-                font-family: Tahoma, Arial, sans-serif;
-            }
+	<head>
+		<meta charset="utf-8">
+		<title>Twitter Fader demo</title>
+		<style>
+			html {
+				font-family: Calibri, Arial, sans-serif;
+			}
 
-            h1 {
-                font-size: 50px;
-                text-align: center;
-            }
+			body {
+				display: block;
+				width: 50%;
+				margin: 2% auto;
+			}
 
-            ul {
-                width: 90%;
-                margin: 0 auto;
-                padding: 10px;
-                list-style-type: none;
-                font-size: 20px;
-                line-height: 1.5em;
-                text-align: center;
-                border: 1px solid #DDD;
-                background: #EEE;
-                color: #111;
-            }
-        </style>
-    </head>
+			#twf-container {
+				display: block;
+				width: 98%;
+				padding: 0.25em;
+				margin-bottom: 1em;
+				font-family: inherit;
+				font-size: 2em;
+				text-align: center;
+				list-style-type: none;
+				border: 1px solid #333;
+				background: #FEFEFE;
+			}
+		</style>
+	</head>
 
-    <body>
+	<body>
 
-        <h1>Twitter Fader Demo</h1>
+		<ul id="twf-container"></ul>
 
-        <ul id="twf-container"></ul>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="jquery.twitterFader.js"></script>
+		<script>
+			$(function () {
+				$('#twf-container').twitterFader('web');
+			});
+		</script>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-        <script src="jquery.twitterFader.js"></script>
-        <script>
-            $(function () {
-                $('ul#twf-container').twitterFader('web');
-            });
-        </script>
-    </body>
+	</body>
 
 </html>
