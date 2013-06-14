@@ -2,6 +2,10 @@
 
 ## Version 1.2.1
 
+### Warning
+
+__On 11/06/2013 Twitter [deprecated the v1 API](https://dev.twitter.com/blog/api-v1-is-retired), upon which this plug-in depends. Unfortunately the new API requires applications to authenticate with Twitter, so the plug-in needs some considerable work to get working again. I'll look into this when I can, but in the mean time more information can be found in [issue #4](https://github.com/chriscook/twitter-fader/issues/4).__
+
 ### Introduction
 
 __Twitter Fader__ is a _jQuery_ plug-in which retrieves a number of tweets, based upon a supplied search term, and displays them in a ticker-like display. Each tweet is displayed for a set period of time, then fades out and is replaced by another. This continues indefinitely.
